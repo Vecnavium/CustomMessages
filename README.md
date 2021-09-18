@@ -1,7 +1,9 @@
 [![Discord](https://img.shields.io/discord/837701868649709568.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/jWFB56RqUN) 
 
 ## CustomMessages
-A PocketMine-MP Plugin that will allow you to freely set custom messages
+A PocketMine-MP Plugin that will allow you to freely set custom messages 
+
+This plugin is for PocketMine-4 (API 4.0.0)
 
 
 # Features 
