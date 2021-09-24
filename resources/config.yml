@@ -1,12 +1,10 @@
 ---
 
 Join:
-  Disabled: false
   Enabled: true
   message: "&l&6{PLAYER} &f Has joined the server"
 
 Quit:
-  Disabled: false
   Enabled: true
   message: "&l&6{PLAYER} &f Has left the server"
 

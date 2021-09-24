@@ -4,8 +4,6 @@
 namespace Vecnavium\CustomMessages;
 
 use pocketmine\player\Player;
-use pocketmine\entity\Living;
-use pocketmine\level\Level;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
@@ -32,10 +30,6 @@ class Main extends PluginBase
     public function isJoinMessageEnabled() : bool {
         return $this->config["Join"]["Enabled"];
     }
-    public function isJoinMessageDisabled(): bool
-    {
-        return $this->config["Join"]["Disabled"];
-    }
     public function getJoinMessage(Player $player)
     {
         return TextFormat::colorize($this->replaceVars($this->config["Join"]["message"], array(
@@ -45,10 +39,6 @@ class Main extends PluginBase
 
     public function isQuitMessageEnabled(){
         return $this->config["Quit"]["Enabled"];
-    }
-    public function isQuitMessageDisabled()
-    {
-        return $this->config["Quit"]["Disabled"];
     }
     public function getQuitMessage(Player $player){
         return TextFormat::colorize($this->replaceVars($this->config["Quit"]["message"], array(
