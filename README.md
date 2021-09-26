@@ -27,13 +27,6 @@ And possibly few more that isn't listed
 
 Have other suggestions? Let me know in the [Support Discord](https://discord.gg/jWFB56RqUN) or Create an [Issue](https://github.com/Vecnavium/CustomMessages/issues/new) about your suggestion!
 
-# Commands & Permissions 
-
-|Command|Description|Permissions|
-|:--:|:--:|:--:|
-|/leaderboard|Create floating leaderboard text|`vecnaleaderboards.lb`
-|/stats|Shows Player Statistics|`Everyone`|
-
 # BugReport
 
 You found a bug or a plugin issue?
