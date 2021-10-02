@@ -8,4 +8,8 @@ Quit:
   Enabled: true
   message: "&l&6{PLAYER} &f Has left the server"
 
+WhitelistedServer:
+  Enabled: true
+  message: "&l&6This Server is whitelisted right now"
+
 ...

@@ -14,18 +14,14 @@ class Main extends PluginBase
 
     private static $instance = null;
 
-
-    public function onLoad(): void
+    public function onEnable(): void
     {
+        $this->getServer()->getPluginManager()->registerEvents(new Listeners($this), $this);
         @mkdir($this->getDataFolder());
         $this->saveDefaultConfig();
         $this->config = $this->getConfig()->getAll();
     }
 
-    public function onEnable(): void
-    {
-        $this->getServer()->getPluginManager()->registerEvents(new Listeners($this), $this);
-    }
 
     public function isJoinMessageEnabled() : bool {
         return $this->config["Join"]["Enabled"];
@@ -45,6 +41,14 @@ class Main extends PluginBase
             "PLAYER" => $player->getName())));
     }
 
+    public function isWhitelistMessageEnabled() : bool {
+        return $this->config["WhitelistedServer"]["Enabled"];
+    }
+
+    public function getWhitelistMessage(Player $player){
+        return TextFormat::colorize($this->replaceVars($this->config["WhitelistedServer"]["message"], array(
+            "PLAYER" => $player->getName())));
+    }
 
     public function replaceVars($str, array $vars)
     {
