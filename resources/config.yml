@@ -1,5 +1,9 @@
 ---
 
+#Variables supported you can use for your custom messages.
+# {PLAYER} - Display the user's username on the custom message.
+
+
 Join:
   Enabled: true
   message: "&l&6{PLAYER} &f Has joined the server"
