@@ -12,7 +12,6 @@ class Main extends PluginBase
 
     private $config;
 
-    private static $instance = null;
 
     public function onEnable(): void
     {
