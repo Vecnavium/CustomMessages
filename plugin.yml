@@ -3,5 +3,6 @@ author: Vecnavium
 description: A PocketMine-MP Plugin that will allow you to freely set custom messages
 load: STARTUP
 main: Vecnavium\CustomMessages\Main
+src-namespace-prefix: Vecnavium\CustomMessages
 version: 1.0.0
 api: [4.0.0]

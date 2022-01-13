@@ -1,19 +1,13 @@
 ---
-
-#Variables supported you can use for your custom messages.
-# {PLAYER} - Display the user's username on the custom message.
-
+# Languages available: [eng, vie]
+Language: eng
 
 Join:
   Enabled: true
-  message: "&l&6{PLAYER} &f Has joined the server"
 
 Quit:
   Enabled: true
-  message: "&l&6{PLAYER} &f Has left the server"
 
 WhitelistedServer:
   Enabled: true
-  message: "&l&6This Server is whitelisted right now"
-
 ...
