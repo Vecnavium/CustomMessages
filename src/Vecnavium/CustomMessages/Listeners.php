@@ -59,7 +59,7 @@ class Listeners implements Listener
                 $this->plugin->getServer()->getPluginManager()->callEvent($cevent);
                 if ($cevent->getMessage() != "") {
                     $player->close("", $cevent->getMessage());
-                    $event->setCancelled(true);
+                    $event->cancel();
                 }
             }
         }
